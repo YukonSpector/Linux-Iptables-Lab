@@ -27,4 +27,4 @@ vagrant ssh [instanceName]
 ```
 
 ## To-Do
-* Add playbook to set the nater instance kernel to forward by default.
+* ~~Add playbook to set the nater instance kernel to forward by default.~~

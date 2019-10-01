@@ -17,10 +17,11 @@ servers=[
     :ip_one => INTERNAL_NET_ONE + "2",
     :ip_int_one => "1",
     :ip_two => INTERNAL_NET_TWO + "1",
-    :ip_int_two => "1",
+    :ip_int_two => "2",
     :ram => "512",
     :cpu_count => "1",
-    :cpu_cap => "50"
+    :cpu_cap => "50",
+    :playbook => "nater.yml"
   },
   {
     :hostname => "client" + DOMAIN,
@@ -47,6 +48,11 @@ Vagrant.configure(2) do |config|
                 vb.customize ["modifyvm", :id, "--memory", machine[:ram]]
                 vb.customize ["modifyvm", :id, "--cpus", machine[:cpu_count]]
                 vb.customize ["modifyvm", :id, "--cpuexecutioncap", machine[:cpu_cap]]
+            end
+            if (!machine[:playbook].nil?)
+                node.vm.provision "ansible" do |ansible|
+                    ansible.playbook = machine[:playbook]
+                end
             end
         end
     end

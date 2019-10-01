@@ -1,6 +1,10 @@
 # Linux-Iptables-Lab
 
 Repo to store lab used to work with iptables.
+The following is a list of the tasks to perform in the lab:
+1. Add a route to the client to reach 100.100.100.2.
+2. Add nat configuration to iptables to reach 100.100.100.1
+	* use tcpdump to verify that natting is happening.
 
 ## Status
 

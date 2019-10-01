@@ -8,9 +8,9 @@ servers=[
     :hostname => "server" + DOMAIN,
     :ip_one => INTERNAL_NET_ONE + "1",
     :ip_int_one => "1",
-    :ram => 512,
-    :cpu_count => 1,
-    :cpu_cap => 50
+    :ram => "512",
+    :cpu_count => "1",
+    :cpu_cap => "50"
   },
   {
     :hostname => "nater" + DOMAIN,
@@ -18,17 +18,17 @@ servers=[
     :ip_int_one => "1",
     :ip_two => INTERNAL_NET_TWO + "1",
     :ip_int_two => "1",
-    :ram => 512,
-    :cpu_count => 1,
-    :cpu_cap => 50
+    :ram => "512",
+    :cpu_count => "1",
+    :cpu_cap => "50"
   },
   {
     :hostname => "client" + DOMAIN,
     :ip_one => INTERNAL_NET_TWO + "2",
     :ip_int_one => "2",
-    :ram => 512,
-    :cpu_count => 1,
-    :cpu_cap => 50
+    :ram => "512",
+    :cpu_count => "1",
+    :cpu_cap => "50"
   }
 ]
 

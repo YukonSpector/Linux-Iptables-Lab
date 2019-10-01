@@ -8,7 +8,7 @@ Coming soon.
 
 ## Design
 
-Coming soon.
+![arch](/docs/imgs/Linux-Iptables-Lab_topology.jpg "Lab Topology")
 
 ## Requirements
 1. Vagrant

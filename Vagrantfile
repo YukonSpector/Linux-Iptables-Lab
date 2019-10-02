@@ -21,7 +21,7 @@ servers=[
     :ram => "512",
     :cpu_count => "1",
     :cpu_cap => "50",
-    :playbook => "nater.yml"
+    :playbook => "nater.yaml"
   },
   {
     :hostname => "client" + DOMAIN,
